@@ -1,14 +1,21 @@
 {
   "name": "twiki-preview",
-  "displayName": "Twiki Preview",
-  "description": "Preview Twiki syntax.",
-  "version": "0.0.1",
+  "displayName": "TWiki Preview",
+  "description": "Preview TWiki syntax",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.93.0"
   },
   "categories": [
+    "Visualization",
     "Other"
   ],
+  "license": "MIT",
+  "publisher": "Eric Cirone",
+  "bugs": {
+    "url": "https://github.com/ericcirone/vscode-twiki-preview/issues"
+  },
+  "homepage": "https://github.com/ericcirone/vscode-twiki-preview",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
