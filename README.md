@@ -1,65 +1,46 @@
-# twiki-preview README
+# TWiki Syntax Preview - VS Code Extension
 
-This is the README for your extension "twiki-preview". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension provides live preview functionality for TWiki syntax, allowing you to write and preview TWiki-formatted documents in real-time.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+-   **Live Preview**: Automatically updates the preview as you type, allowing you to see how your TWiki syntax will look.
+-   **TWiki Formatting Support**: Supports key TWiki formatting, including:
+    -   **Headings**: Convert TWiki headings (e.g., `---+`, `---++`, etc.) into HTML headings.
+    -   **Bold** and **Italic**: Supports bold (`*text*`) and italic (`_text_`) formatting.
+    -   **Links**: Parse TWiki-style links like `[[URL][Link Text]]`.
+    -   **Tables**: Fully supports TWiki table formatting, including special alignment rules, colspan, and multiline rows.
+    -   **Code Blocks**: Handles fixed-width code and verbatim sections.
+    -   **HTML Support**: Allows embedded HTML within TWiki syntax.
+    -   **Special Characters**: Supports special TWiki characters like `%VBAR%` and `%CARET%`.
 
-For example if there is an image subfolder under your extension project workspace:
+## Usage
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open a document with TWiki syntax in Visual Studio Code.
+2. Use the command palette (`Ctrl + Shift + P` or `Cmd + Shift + P` on macOS) and run `Show TWiki Preview`.
+3. The preview pane will open, showing a live preview of your TWiki document.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## TWiki Syntax Supported
 
-## Requirements
+-   Headings (e.g., `---+`, `---++`)
+-   Bold (`*bold text*`)
+-   Italics (`_italic text_`)
+-   Links (`[[https://example.com][Example]]`)
+-   Tables with alignment and column spanning
+-   Code blocks and verbatim sections (`<verbatim>...</verbatim>`)
+-   Embedded HTML
+-   Special characters like `%VBAR%` (`|`) and `%CARET%` (`^`)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Installation
 
-## Extension Settings
+1. Download and install from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/vscode).
+2. Search for **TWiki Syntax Preview** and install it.
+3. Enjoy live TWiki syntax previews in your editor!
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Contributing
 
-For example:
+Feel free to submit issues and pull requests on the [GitHub repository](https://github.com/ericcirone/vscode-twiki-preview).
 
-This extension contributes the following settings:
+## License
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [MIT License](LICENSE).
