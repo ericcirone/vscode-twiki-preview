@@ -16,6 +16,7 @@
     "url": "https://github.com/ericcirone/vscode-twiki-preview/issues"
   },
   "homepage": "https://github.com/ericcirone/vscode-twiki-preview",
+  "repository": "github:ericcirone/vscode-twiki-preview",
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
