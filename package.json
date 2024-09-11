@@ -2,7 +2,7 @@
   "name": "twiki-preview",
   "displayName": "TWiki Preview",
   "description": "Preview TWiki syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.93.0"
   },
