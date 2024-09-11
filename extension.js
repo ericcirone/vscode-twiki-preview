@@ -64,8 +64,16 @@ function parseTWiki(text) {
 		return `[[[[verbatim-block-${verbatimBlocks.length - 1}]]]]`;
 	});
 
-	// Extract all HTML tags (so they won't be escaped or modified)
-	text = text.replace(/<[^>]+>/g, (match) => {
+	// // Extract all HTML tags (so they won't be escaped or modified)
+	// text = text.replace(/<[^>]+>/g, (match) => {
+	// 	htmlParts.push(match);
+	// 	return `[[[[html-part-${htmlParts.length - 1}]]]]`;
+	// });
+
+	// Extract multiline HTML tags that start with "<" at the beginning of the line
+	// This also ensures it captures the entire corresponding tag, including multiline HTML
+	const htmlRegex = /(^\s*<[\s\S]*?>)/gm;
+	text = text.replace(htmlRegex, (match) => {
 		htmlParts.push(match);
 		return `[[[[html-part-${htmlParts.length - 1}]]]]`;
 	});
